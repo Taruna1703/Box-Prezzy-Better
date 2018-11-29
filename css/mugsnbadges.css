@@ -1,0 +1,166 @@
+
+footer{
+    display: inline-block;
+}
+
+.cbp-rfgrid {
+	margin: auto;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	width: 100%;
+}
+.cbp-rfgrid .ProductGrid{
+	
+	position: relative;
+	float: left;
+	overflow: hidden;
+	width: 25%; /* Fallback */
+	width: -webkit-calc(100% / 4);
+	width: calc(100% / 4);
+
+}
+.cbp-rfgrid .ProductGrid a,
+.cbp-rfgrid .ProductGrid a img {
+	display: block;
+	
+	cursor: pointer;
+	height: 100%;
+}
+
+.cbp-rfgrid .ProductGrid a img {
+	max-width: 100%;
+}
+
+/* Flexbox is used for centering the heading */
+.cbp-rfgrid .ProductGrid a div {
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	right: 20px;
+	bottom: 20px;
+	background: rgba(71,163,218,0.2);
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: flex;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+}
+/*.mc{
+	background-color:#cbd0d8;
+}*/
+.button-primary{
+	background-color: #aaf757;
+}
+.cbp-rfgrid .ProductGrid .mc:hover div {
+	opacity: 1;
+}
+
+.cbp-rfgrid .ProductGrid a div h3 {
+	width: 100%;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.4em;
+	letter-spacing: 2px;
+	padding: 0 10px;
+}
+ .Productgrid button {
+	top: 50%;
+	left: 50%;
+	border: 3px solid #fff;
+	background: transparent;
+	color: #fff;
+	opacity: 0;
+	-webkit-transform: translateY(-50%) translateX(-50%) scale(0.25);
+	transform: translateY(-50%) translateX(-50%) scale(0.25);
+
+}
+.card{
+	box-shadow: 8px 8px 5px rgb(207, 203, 203);	
+	
+}
+
+.card-img-top{
+	width:100%;
+	 height: 100%;
+	 padding: 20px;
+}
+.image-wrapper {
+	width:100%;
+	 height: 400px;
+}
+.card-title {
+    display: flex;
+    justify-content: space-between;
+}
+.card-text {
+    display: flex;
+    justify-content: space-between;
+}
+.border-heart{
+	color: #fc4d4d;
+    font-size: 21px;
+}
+.add-cart{
+	color: #bbf93e;
+    font-size: 21px;
+}
+
+.selected-cart{
+	color: #3f9cff;
+	font-size: 22px;
+}
+
+
+/* Example for media query: change number of items per row */
+
+
+@media screen and (max-width: 660px) {
+	.cbp-rfgrid .ProductGrid {
+		width: 33.3333333%; /* Fallback */
+		width: -webkit-calc(100% / 3);
+		width: calc(100% / 3);
+	}
+}
+
+
+
+@media screen and (max-width: 509px) {
+	.cbp-rfgrid .ProductGrid {
+		width: 50%; /* Fallback */
+		width: -webkit-calc(100% / 2);
+		width: calc(100% / 2);
+
+	}
+	.card-img-top{
+	width:100%;
+	 height: 250px;
+}
+.image-wrapper {
+	width:100%;
+	 height: 270px;
+}
+}
+
+@media screen and (max-width: 355px) {
+	.cbp-rfgrid .ProductGrid {
+		width: 100%;
+		width: -webkit-calc(100% / 1);
+		width: calc(100% / 1);
+	}
+	.card-img-top{
+	width:100%;
+	 height: 100%;
+}
+.image-wrapper {
+	width:100%;
+	 height: 350px;
+}
+	
+
+}

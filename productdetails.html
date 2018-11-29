@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/pd.css">
+    <title>Box-Prezzy</title>
+  </head>
+  <body>
+    
+    <header>
+    	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="background-color: #f75757!important;">
+    	   
+    	    <div class="Box">
+            <a class="navbar-brand" id="logo" href="index.html"><span id="logoTxt">Box Prezzy </span><span id="logo"><i class="fas fa-gift"></i></span></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                 <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-6 searchBar" type="search" placeholder="Search for gifts..." aria-label="Search">
+                  <button class="btn  my-2 my-sm-0 searchButton" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <div>
+                <ul class="navbar-nav mr-auto justify-content-end" id="navList">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#"  data-toggle="modal" data-target="#ModalLoginForm"><i class="fas fa-user"></i>  Acount    <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                              <a class="nav-link" href="wishlist.html"><i class="fas fa-heart"></i>  WishList     <span class="sr-only"></span></a>
+                          </li>
+                  <li class="nav-item">
+                   <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i>  Cart</a>
+                  </li>
+                  
+                </ul>
+                </div>
+             </div>
+          
+        </nav>
+       
+        <div class="megamenu">
+        	<ul class="nav justify-content-center">
+              <li class="nav-item">
+                 <a class="nav-link active" href="#"><b>T-Shirt</b></a>
+              </li>
+              <li class="nav-item">
+                 <a class="nav-link" href="#"><b>Mugs</b></a>
+              </li>
+              <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"><b>Mobile Covers</b></a>
+                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+               <a class="dropdown-item" href="mc3.html">Samsung</a>
+               <a class="dropdown-item" href="mc3.html">Redime</a>
+               <a class="dropdown-item" href="mc3.html">Apple</a>
+               <a class="dropdown-item" href="mc3.html">Oppo</a>
+               <a class="dropdown-item" href="mc3.html">Nokia</a>
+               <a class="dropdown-item" href="mc3.html">Gionie</a>
+               <a class="dropdown-item" href="mc3.html">Mircomax</a>
+               <a class="dropdown-item" href="mc3.html">Vivo</a>
+          </div>
+       
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#"><b>Bagdes</b></a>
+              </li>
+              <li class="nav-item">
+                 <a class="nav-link" href="#"><b>Handicrafts</b></a>
+              </li>
+              
+            </ul>
+        </div>
+          
+    </header>
+<!-- Modal Sign in HTML Markup -->
+    <div id="ModalLoginForm" class="modal fade">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title">Login</h1>
+            </div>
+            <div class="modal-body">
+                <form role="form" method="POST" action="">
+                    <input type="hidden" name="_token" value="">
+                    <div class="form-group">
+                        <label class="control-label">E-Mail Address</label>
+                        <div>
+                            <input type="email" class="form-control input-lg" name="email" value="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Password</label>
+                        <div>
+                            <input type="password" class="form-control input-lg" name="password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="remember"> Remember Me
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div>
+                            <button type="submit" class="btn btn-success">Login</button>
+ 
+                            <a class="btn btn-link" href="">Forgot Your Password?</a>
+                        </div>
+                    </div>
+                    <div>Haven't registered yet?<a class="btn btn-link" href="#" data-toggle="modal" data-target="#ModalSignUpForm">Sign UP>></a></div>
+                </form>
+                
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+ <!-- Modal sign up HTML Markup -->
+    <div id="ModalSignUpForm" class="modal fade">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title">Sign up !</h1>
+            </div>
+            <div class="modal-body">
+                
+                <form role="form" method="POST" action="">
+                    <input type="hidden" name="_token" value="" class="name-input">
+                    <div class="form-group">
+                        <label class="control-label">Username</label>
+                        <div>
+                            <input type="text" class="form-control input-lg" name="name" value="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">E-Mail Address</label>
+                        <div>
+                            <input type="email" class="form-control input-lg" name="email" value="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Password</label>
+                        <div>
+                            <input type="password" class="form-control input-lg" name="password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Confirm Password</label>
+                        <div>
+                            <input type="password" class="form-control input-lg" name="password_confirmation">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div>
+                            <button type="submit" class="btn btn-success">
+                                Register
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- BREADCRUMB -->
+<div id="breadcrumb">
+<div class="container-fluid">
+<ul class="breadcrumb">
+  <li><a href="index.html"> Home ></a></li>
+  <li><a href="#"> Mobile Covers ></a></li>
+  <li><a href="mc3.html"> Samsung ></a></li>
+  <li class="active"> Meri Jaan</li>
+</ul>
+</div>
+</div>
+<!-- /BREADCRUMB -->
+
+<div class="container-fluid">
+ <div class="nav flex-column nav-tabs small-icons" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+        <div class="small-pd-div">
+          <img class="small-pd-img icon1" src="attachments/mc (1).png" alt="Card image"/>
+        </div>
+      </a>
+      <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+       <div class="small-pd-div">
+          <img class="small-pd-img icon1" src="attachments/mc (2).png" alt="Card image"/>
+        </div> 
+      </a>
+      <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+        <div class="small-pd-div">
+          <img class="small-pd-img icon1" src="attachments/mc (3).png" alt="Card image"/>
+        </div>
+      </a>
+      <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+        <div class="small-pd-div">
+          <img class="small-pd-img icon1" src="attachments/mc (4).png" alt="Card image"/>
+        </div>
+      </a>
+    </div>
+  <div class="tab-content large-img large-img" id="v-pills-tabContent">
+      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+        <div class="large-img">
+          <img class="card-img main-img" src="attachments/mc (1).png" alt="Card image"/>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+       <div class="large-img">
+          <img class="card-img main-img" src="attachments/mc (2).png" alt="Card image"/>
+        </div>       
+      </div>
+      <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+        <div class="large-img">
+          <img class="card-img main-img" src="attachments/mc (3).png" alt="Card image"/>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+        <div class="large-img">
+          <img class="card-img main-img" src="attachments/mc (4).png" alt="Card image"/>
+        </div>
+      </div>
+    </div>
+
+  
+      <div class="info">
+        <div class="product product-details clearfix">
+          <div class="product-body">
+              <div class="product-label">
+                 <span>New</span>
+                 <span class="sale">-20%</span>
+              </div>
+              <h2 class="product-name">Nebula Print IPhone Case</h2>
+              <h3 class="product-price">$32.50 <del class="product-old-price">$45.00</del></h3>
+              <div>
+                 <div class="product-rating">
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star-o empty"></i>
+                </div>
+                <a href="#">3 Review(s) / Add Review</a>
+              </div>
+              <p><strong>Availability:</strong> In Stock</p>
+              <p><strong>Brand:</strong> E-SHOP</p>
+              <p>Our phone cases are a #style statement in your pocket.They fit the phone snugly and has appropriate cut outs for all buttons and slots.</p>
+              <ul>
+                  <li>Material:Light, Durable Polycarbonate Hard Case.</li>
+                  <li> Finish: Smooth.</li>
+                  <li>Extremely smooth to touch & feel.</li>
+                  <li>Top Notch Printing Technology used,which ensures high print quality and extraordinary level of detail.</li>
+              </ul>
+                  <div class="product-options">
+                      <ul class="size-option">
+                         <li><span class="text-uppercase">Size:</span></li>
+                         <li class="active"><a href="#">S</a></li>
+                         <li><a href="#">XL</a></li>
+                         <li><a href="#">SL</a></li>
+                      </ul>
+                      <ul class="color-option">
+                        <li><span class="text-uppercase">Select phone model : </span></li>
+                        <li>
+                         <form action="">
+                           <select name="phone-cover">
+                              <option value="select" disabled>Select Model</option>
+                              <option value="Galaxy S7" >Galaxy S7</option>
+                              <option value="Moto G5">Moto G5</option>
+                              <option value="Xiaomi Mi6">Xiaomi Mi6</option>
+                              <option value="Lenovo K5">Lenovo K5</option>
+                           </select>
+                       </li>
+                      </ul>
+                  </div>
+                  <div class="product-btns">
+                     <div class="qty-input">
+                        <span class="text-uppercase">QTY: </span>
+                        <input class="input" type="number">
+                     </div>
+                      <div  style="display:-webkit-box;">
+                      <button class="primary-btn add-to-cart"><i class="fa fa-shopping-cart"></i>Add to Cart</button>
+                     </div>
+          
+                     <div class="pull-right">
+                        <button class="main-btn icon-btn"><i class="fa fa-heart"></i></button>
+                        <button class="main-btn icon-btn"><i class="fa fa-exchange"></i></button>
+                        <button class="main-btn icon-btn"><i class="fa fa-share-alt"></i></button>
+                     </div>
+                  </div>
+          </div><!--product-body--> 
+      </div><!--product details-->   
+       </div><!--info-->
+  </div><!--container-fluid-->
+   <div class="col-md-12">
+            <div class="product-tab">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Description</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Details</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Reviews (3)</a>
+             </li>
+            </ul>
+              
+              <div class="tab-content">
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <p>Our phone cases are a #style statement in your pocket.They fit the phone snugly and has appropriate cut outs for all buttons and slots.</p>
+
+                  </div>
+                  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <ul>
+                      <li>Material:Light, Durable Polycarbonate Hard Case.</li>
+                      <li> Finish: Smooth.</li>
+                      <li>Extremely smooth to touch & feel.</li>
+                      <li>Top Notch Printing Technology used,which ensures high print quality and extraordinary level of detail.</li>
+                   </ul>
+                 </div>
+                  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                     <div class="row">
+                       <div class="col-md-6">
+                          <div class="product-reviews">
+                            <div class="single-review">
+                               <div class="review-heading">
+                                 <div><a href="#"><i class="fa fa-user-o"></i> John</a></div>
+                                 <div><a href="#"><i class="fa fa-clock-o"></i> 27 DEC 2018 / 8:00 PM</a></div>
+                                 <div class="review-rating pull-right">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o empty"></i>
+                                 </div>
+                               </div>
+                               <div class="review-body">
+                                 <p>Really reliable product</p>
+                               </div>
+                            </div>
+                            <div class="single-review">
+                               <div class="review-heading">
+                                 <div><a href="#"><i class="fa fa-user-o"></i> John</a></div>
+                                 <div><a href="#"><i class="fa fa-clock-o"></i> 27 DEC 2018 / 8:00 PM</a></div>
+                                 <div class="review-rating pull-right">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o empty"></i>
+                                 </div>
+                               </div>
+                               <div class="review-body">
+                                 <p>Really reliable product</p>
+                               </div>
+                            </div>
+                            <div class="single-review">
+                               <div class="review-heading">
+                                 <div><a href="#"><i class="fa fa-user-o"></i> John</a></div>
+                                 <div><a href="#"><i class="fa fa-clock-o"></i> 27 DEC 2018 / 8:00 PM</a></div>
+                                 <div class="review-rating pull-right">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o empty"></i>
+                                 </div>
+                               </div>
+                               <div class="review-body">
+                                 <p>Really reliable product</p>
+                               </div>
+                            </div>
+                            <ul class="reviews-pages">
+                              <li class="active">1</li>
+                              <li><a href="#">2</a></li>
+                              <li><a href="#">3</a></li>
+                              <li><a href="#"><i class="fa fa-caret-right"></i></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <h4 class="text-uppercase">Write Your Review</h4>
+                          <p>Your email address will not be published.</p>
+                          <form class="review-form">
+                             <div class="form-group">
+                               <input class="input" type="text" placeholder="Your Name" />
+                             </div>
+                             <div class="form-group">
+                               <input class="input" type="email" placeholder="Email Address" />
+                             </div>
+                            <div class="form-group">
+                              <textarea class="input" placeholder="Your review"></textarea>
+                            </div>
+                            <div class="form-group">
+                              <div class="input-rating">
+                                <strong class="text-uppercase">Your Rating: </strong>
+                                 <div class="stars">
+                                   <input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
+                                   <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
+                                   <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
+                                   <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
+                                   <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+                                 </div>
+                              </div>
+                            </div>
+                            <button class="primary-btn">Submit</button>
+                          </form>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+               </div>
+            </div>
+          </div>
+
+
+  <!-- section -->
+<div class="section">
+<!-- container -->
+<div class="container">
+<!-- row -->
+<div class="row">
+  <!-- section title -->
+  <div class="col-md-12">
+    <div class="section-title">
+      <h2 class="title">Picked For You</h2>
+    </div>
+  </div>
+  <!-- section title -->
+  <!-- Product Single -->
+  <div class="col-md-3 col-sm-6 col-xs-6">
+    <div class="product product-single">
+      <div class="product-thumb">
+        <button class="main-btn quick-view"><i class="fa fa-search-plus"></i> Quick view</button>
+        <img src="./img/img3.jpg" alt="">
+      </div>
+      <div class="product-body">
+        <h3 class="product-price">$32.50</h3>
+        <div class="product-rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o empty"></i>
+        </div>
+        <h2 class="product-name"><a href="#">Animal Print IPhone Case</a></h2>
+        <div class="product-btns">
+          <button class="main-btn icon-btn"><i class="fa fa-heart"></i></button>
+          <button class="main-btn icon-btn"><i class="fa fa-exchange"></i></button>
+          <button class="primary-btn add-to-cart"><i class="fa fa-shopping-cart"></i>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Product Single -->
+  <!-- Product Single -->
+  <div class="col-md-3 col-sm-6 col-xs-6">
+    <div class="product product-single">
+      <div class="product-thumb">
+        <div class="product-label">
+          <span>New</span>
+        </div>
+        <button class="main-btn quick-view"><i class="fa fa-search-plus"></i> Quick view</button>
+        <img src="./img/img4.jpg" alt="">
+      </div>
+      <div class="product-body">
+        <h3 class="product-price">$32.50</h3>
+        <div class="product-rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o empty"></i>
+        </div>
+        <h2 class="product-name"><a href="#">Galaxy Print Iphone Case</a></h2>
+        <div class="product-btns">
+          <button class="main-btn icon-btn"><i class="fa fa-heart"></i></button>
+          <button class="main-btn icon-btn"><i class="fa fa-exchange"></i></button>
+          <button class="primary-btn add-to-cart"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Product Single -->
+  <!-- Product Single -->
+  <div class="col-md-3 col-sm-6 col-xs-6">
+    <div class="product product-single">
+      <div class="product-thumb">
+        <div class="product-label">
+          <span class="sale">-20%</span>
+        </div>
+        <button class="main-btn quick-view"><i class="fa fa-search-plus"></i> Quick view</button>
+        <img src="./img/img5.jpg" alt="">
+      </div>
+      <div class="product-body">
+        <h3 class="product-price">$32.50 <del class="product-old-price">$45.00</del></h3>
+        <div class="product-rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o empty"></i>
+        </div>
+        <h2 class="product-name"><a href="#">Pineapple Print IPhone Case</a></h2>
+        <div class="product-btns">
+          <button class="main-btn icon-btn"><i class="fa fa-heart"></i></button>
+          <button class="main-btn icon-btn"><i class="fa fa-exchange"></i></button>
+          <button class="primary-btn add-to-cart"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Product Single -->
+  <!-- Product Single -->
+  <div class="col-md-3 col-sm-6 col-xs-6">
+    <div class="product product-single">
+      <div class="product-thumb">
+        <div class="product-label">
+          <span>New</span>
+          <span class="sale">-20%</span>
+        </div>
+        <button class="main-btn quick-view"><i class="fa fa-search-plus"></i> Quick view</button>
+        <img src="./img/img6.jpg" alt="">
+      </div>
+      <div class="product-body">
+        <h3 class="product-price">$32.50 <del class="product-old-price">$45.00</del></h3>
+        <div class="product-rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o empty"></i>
+        </div>
+        <h2 class="product-name"><a href="#">Jiggypuff iPhone Case</a></h2>
+        <div class="product-btns">
+          <button class="main-btn icon-btn"><i class="fa fa-heart"></i></button>
+          <button class="main-btn icon-btn"><i class="fa fa-exchange"></i></button>
+          <button class="primary-btn add-to-cart"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Product Single -->
+</div>
+<!-- /row -->
+</div>
+<!-- /container -->
+</div>
+<!-- /section -->
+
+
+
+ <!--footer-->
+     <footer class="footer-distributed">
+         <div class="footer-left">
+            <h3>BOX PREZZY<span id="logo"><i class="fas fa-gift"></i></span></h3>
+            <p class="footer-links">
+             <a href="#">Home</a>
+             <a href="#">Offers</a>
+             <a href="#">Pricing</a>
+             <a href="#">About</a>
+             <a href="#">Faq</a>
+             <a href="#">Contact Us</a>
+            </p>
+            <p class="footer-company-name">BOX PREEZY &copy; 2018</p>
+         </div>
+
+         <div class="footer-center">
+           <div>
+             <i class="fa fa-map-marker"></i>
+             <p><span>B-5745, NHPC Chawnk</span> Faridabad 121005</p>
+          </div>
+          <div>
+             <i class="fa fa-phone"></i>
+             <p>+91 9023100325</p>
+          </div>
+           <div>
+             <i class="fa fa-envelope"></i>
+             <p><a href="mailto:support@company.com">support@boxpreezy.com</a></p>
+           </div>
+         </div>
+         <div class="footer-right">
+             <p class="footer-company-about">
+             <span>About Us</span>
+             Best Deals and Offers . Guarantee assures you receive the best service at a reasonable price when you order online with us. 
+             </p>
+             <div class="footer-icons">
+                 <a href="#"><i class="fa fa-facebook"></i></a>
+                 <a href="#"><i class="fa fa-twitter"></i></a>
+                 <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+         </div>
+     </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="cart/js/javascript.js"></script>  
+    <script type="text/javascript" src="js/mc.js"></script>
+    <script type="text/javascript" src="js/pd.js"></script>
+
+  </body>
+</html>

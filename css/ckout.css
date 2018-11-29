@@ -1,0 +1,42 @@
+.delivery{
+	margin-top: 120px;
+	
+}
+.btn-delivery{
+	background-color: #f75757;
+	color: white;
+}
+.delivery-heading .breadcrumb{
+    color: white;
+    background-color: black;
+    font-weight: 700;
+}
+.imgp{
+	
+	height: 50px;
+	padding-left: 30px;
+}
+.payments {
+    /* margin-top: 120px; */
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 500px;
+    height: 100px;
+    margin: auto;
+}
+.pmtop{
+	padding-left: 30px;
+	display: block;
+}
+.pymts{
+	margin-top: 20px;
+	    display: block;
+    }
+h4 {
+    font-size: 1.5rem;
+    text-align: center;
+}
